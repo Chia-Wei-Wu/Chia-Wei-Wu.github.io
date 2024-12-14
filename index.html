@@ -62,11 +62,11 @@
               <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#stima">Stima</a>
+              </li>
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#testimonials">Services</a>
-            </li> -->
 			<li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#social">Social</a>
             </li>
@@ -212,7 +212,37 @@
         </div><!-- end container -->
     </div><!-- end section -->
 
-    <div id="portfolio" class="section wb">
+    <div id="stima" class="section wb">
+        <div class="container">
+            <div class="section-title text-left">
+                <h3>Stima</h3>
+                <p>We Make Artificial Intelligence More Accessible.</p>
+            </div><!-- end title -->
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="stima_container">
+                        <div class="box" id="slider">
+                            <img class="slider-image" src="uploads/stima/website.jpg" alt="">
+                            <img class="slider-image" src="uploads/stima/research.png" alt="">
+                            <img class="slider-image" src="uploads/stima/chatbox.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="detail-box">
+                        <div class="heading_container">
+                            <hr>
+                            <h2>Stima API</h2>
+                        </div>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words</p>
+                        <a href="https://api.stima.tech/">Read More</a>
+                    </div>
+                </div><!-- end info -->
+            </div><!-- end container -->
+        </div><!-- end section -->
+    </div>
+    
+    <div id="portfolio" class="section lb">
         <div class="container">
             <div class="section-title text-left">
                 <h3>Portfolio</h3>
@@ -275,7 +305,7 @@
         </div><!-- end container -->
     </div><!-- end section -->
 	
-	<div id="social" class="section lb">
+	<div id="social" class="section wb">
 		<div class="container">
 			<div class="section-title text-left">
                 <h3>Social</h3>
@@ -378,7 +408,7 @@
                                 </div>
                             </div>
                         </form><!-- end form -->                   
-                    </div>
+                    </div><!-- end contact-form --> 
                 </div><!-- end col -->
             </div><!-- end row -->
         </div><!-- end container -->
@@ -417,83 +447,28 @@
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
     <script src="js/jquery.vide.js"></script>
+    <!--  create by myself -->
+    <script>
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.slider-image');
+        const box = document.querySelector('.box');
+
+        function moveToNextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            const offset = -currentIndex * 100; 
+            box.style.transform = `translateX(${offset}%)`;
+        }
+
+        let interval = setInterval(moveToNextImage, 3000); 
+
+        document.querySelector('.stima_container').addEventListener('mouseenter', () => {
+            clearInterval(interval);
+        });
+
+        document.querySelector('.stima_container').addEventListener('mouseleave', () => {
+            interval = setInterval(moveToNextImage, 3000); 
+        });
+    </script>
 
 </body>
 </html>
-
-<!-- <div id="portfolio" class="section lb">
-    <div class="container">
-        <div class="section-title text-left">
-            <h3>Portfolio</h3>
-            <p>A platform for showcasing projects, tools, and applications in NLP.</p>
-        </div>
-        
-        <div class="gallery-menu row">
-            <div class="col-md-12">
-                <div class="button-group filter-button-group text-left">
-                    <button class="active" data-filter="*">All</button>
-                    <button data-filter=".gal_a">Stima</button>
-                    <button data-filter=".gal_b">Projects</button>
-                    <button data-filter=".gal_c">Tools</button>
-                </div>
-            </div>
-        </div>
-        
-        <div class="gallery-list row">
-            <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_b">
-                <div class="gallery-single fix">
-                    <img src="uploads/gallery_img-01.jpg" class="img-fluid" alt="Image">
-                    <div class="img-overlay">
-                        <a href="uploads/gallery_img-01.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 col-sm-6 gallery-grid gal_c gal_b">
-                <div class="gallery-single fix">
-                    <img src="uploads/gallery_img-02.jpg" class="img-fluid" alt="Image">
-                    <div class="img-overlay">
-                        <a href="uploads/gallery_img-02.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
-                <div class="gallery-single fix">
-                    <img src="uploads/gallery_img-03.jpg" class="img-fluid" alt="Image">
-                    <div class="img-overlay">
-                        <a href="uploads/gallery_img-03.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 col-sm-6 gallery-grid gal_b gal_a">
-                <div class="gallery-single fix">
-                    <img src="uploads/gallery_img-04.jpg" class="img-fluid" alt="Image">
-                    <div class="img-overlay">
-                        <a href="uploads/gallery_img-04.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
-                <div class="gallery-single fix">
-                    <img src="uploads/gallery_img-05.jpg" class="img-fluid" alt="Image">
-                    <div class="img-overlay">
-                        <a href="uploads/gallery_img-05.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-4 col-sm-6 gallery-grid gal_c gal_a">
-                <div class="gallery-single fix">
-                    <img src="uploads/gallery_img-06.jpg" class="img-fluid" alt="Image">
-                    <div class="img-overlay">
-                        <a href="uploads/gallery_img-06.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </div>
-</div> -->
