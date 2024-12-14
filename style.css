@@ -2212,16 +2212,9 @@ select.mobile-device {
     background-color: #1f1f1f;
     box-sizing: border-box;
     width: 100%;
-    text-align: left;
+    text-align: center;
     padding: 30px 0px;
     overflow: hidden;
-}
-
-
-/* Footer left */
-
-.footer-distributed .footer-left {
-    float: left;
 }
 
 .footer-distributed .footer-links {
@@ -2528,6 +2521,6 @@ select.mobile-device {
 }
 
 .stima_container:hover .box {
-    animation-play-state: paused; /* 停止動畫 */
+    animation-play-state: paused;
 }
   

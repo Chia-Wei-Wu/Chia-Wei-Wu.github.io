@@ -225,7 +225,6 @@
                             <img class="slider-image" src="uploads/stima/website.jpg" alt="">
                             <img class="slider-image" src="uploads/stima/research.png" alt="">
                             <img class="slider-image" src="uploads/stima/chatbox.jpg" alt="">
-                            <img class="slider-image" src="uploads/stima/chatbox.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -233,10 +232,12 @@
                     <div class="detail-box">
                         <div class="heading_container">
                             <hr>
-                            <h2>Stima API</h2>
+                            <h2>About Stima</h2>
                         </div>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words</p>
+                        <p>Stima has developed an advanced API and the StimaChat conversational system, providing seamless integration with models from OpenAI, Anthropic, Google, Meta, and others. This powerful service enables users to easily connect to a variety of AI models, ensuring a smooth and hassle-free experience. With Stima, you can enhance efficiency while enjoying cost-effective pricing.</p>
+                        <p>In the future, Stima will continue to develop specialized LLM for specific fields and expand its offerings to cater to diverse industry demands.</p>
                         <a href="https://api.stima.tech/">Read More</a>
+                        <hr>
                     </div>
                 </div><!-- end info -->
             </div><!-- end container -->
@@ -418,17 +419,7 @@
     <div class="copyrights">
         <div class="container">
             <div class="footer-distributed">
-                <div class="footer-left">
-                    <p class="footer-links">
-                        <a href="#home">Home</a>
-                        <a href="#autobiography">Autobiography</a>
-                        <a href="#about">About me</a>
-                        <a href="#portfolio">Portfolio</a>
-                        <a href="#social">Social</a>
-                        <a href="#contact">Contact</a>
-                    </p>
-                    <p class="footer-company-name">copyright &copy; C.W.Wu 2024</p>
-                </div>
+                <p class="footer-company-name">copyright &copy; C.W.Wu 2024</p>
             </div>
         </div><!-- end container -->
     </div><!-- end copyrights -->
@@ -460,7 +451,7 @@
             box.style.transform = `translateX(${offset}%)`;
         }
 
-        let interval = setInterval(moveToNextImage, 3000); 
+        let interval = setInterval(moveToNextImage, 5000); 
 
         document.querySelector('.stima_container').addEventListener('mouseenter', () => {
             clearInterval(interval);
