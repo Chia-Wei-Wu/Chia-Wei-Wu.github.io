@@ -2611,7 +2611,7 @@ select.mobile-device {
     /* gap: 1rem; */
 }
 .detail-box .row .col-md-4 {
-    flex: 1 1 33%; 
+    flex: 1 1 20%; 
 }
 
 @media (min-width: 768px) {
