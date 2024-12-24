@@ -490,7 +490,7 @@ xclip
 }
 
 .section.lb {
-    background-color: #f2f3f5;
+    background-color: #EEEEEE;
 }
 
 .section.db {
@@ -564,12 +564,11 @@ xclip
     text-transform: none;
 }
 
-.section.colorsection p,
+/* .section.colorsection p,
 .section.colorsection h3,
 .section.db h3 {
     color: #ffffff;
-}
-
+} */
 
 
 .btn-hover-new{
@@ -1194,8 +1193,8 @@ xclip
 
 .message-box h2 {
     font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
     font-size: 28px;
-    font-weight: 300;
     padding: 0 0 10px;
     margin: 0px;
     line-height: 62px;
@@ -1503,7 +1502,6 @@ hr.invis1 {
 	transform: translateY(0);
 }
 
-
 .post-box .post-thumb::before{
 	content: "";
 	position: absolute;
@@ -1526,25 +1524,17 @@ hr.invis1 {
 	margin-top: 40px;
 }
 
-.post-info p{
-	margin: 0px;
-}
-
 .post-info h4{
+    font-family: "Times New Roman", Times, serif;
 	font-size: 20px;
 	font-weight: 700;
 }
 
-.post-info ul{
-	display: block;
-	text-align: center;
-	margin-bottom: 15px;
+.post-info p{
+    font-family: "Times New Roman", Times, serif;
+	margin: 0px;
+    font-size: 16px;
 }
-.post-info ul li{
-	display: inline-block;
-	text-align: center;
-}
-
 
 /*------------------------------------------------------------------
     FEATURES
@@ -2365,7 +2355,7 @@ select.mobile-device {
     color: #999 !important;
     margin: 0 !important;
     padding: 0 !important;
-    line-height: 1 !important:
+    line-height: 1 !important;
 }
 
 .stat-wrap p {
@@ -2494,7 +2484,6 @@ select.mobile-device {
     margin-bottom: 10px;
 }
 
-
 .stima_container {
     font-family: "Times New Roman", Times, serif;
     position: relative;
@@ -2584,12 +2573,12 @@ select.mobile-device {
     font-style: normal;   /* 字型樣式 */
 }
 
-.detail-box .heading_container h2{
+.detail-box .heading-container h2{
     font-family: "Times New Roman", Times, serif;
     font-size: 28px;
 }
 
-.detail-box .heading_container hr{
+.detail-box .heading-container hr{
     margin-top: 0px;
 }
 
@@ -2602,7 +2591,6 @@ select.mobile-device {
     font-family: "Times New Roman", Times, serif;
     font-size: 18px;
 }
-
 
 .detail-box .row {
     display: flex;
@@ -2618,4 +2606,65 @@ select.mobile-device {
     .col-md-4 {
         flex: 1 1 calc(33.33%); 
     }
+}
+  
+.timeline {
+    position: relative;
+    max-width: 600px;
+    border-left: 2px solid #000000;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+  
+.timeline-item {
+    width: 100%;
+    margin: 20px 0;
+    position: relative;
+    padding-left: 24px;
+}
+
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    left: -25px; 
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    background-color: #000000; 
+    border-radius: 50%; 
+    border: 2px solid #000000; 
+}
+
+.timeline-date {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    color: #050505;
+    margin-bottom: 1px;
+}
+  
+.timeline-content {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.1);
+    min-width: 600px;
+}
+
+.timeline-content h3{
+    font-family: "Times New Roman", Times, serif;
+}
+
+.timeline-content p{
+    margin: 10px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+}
+
+
+.heading-container h2{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 28px;
 }
