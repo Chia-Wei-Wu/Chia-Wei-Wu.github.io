@@ -536,22 +536,28 @@ xclip
 }
 
 .section-title {
-    display: block;
-    position: relative;
-    margin-bottom: 60px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 38px;
+    margin-bottom: 40px;
+    text-transform: none;
+    position: relative; 
 }
 
 .section-title p {
+    font-family: "Times New Roman", Times, serif;
     color: #999;
     font-weight: 400;
     font-size: 18px;
     line-height: 33px;
     margin: 0;
+    line-height: 6px;
 }
 
 .section-title h3 {
+    font-family: "Times New Roman", Times, serif;
     font-size: 38px;
-    font-weight: 500;
+    font-weight: bold;
     line-height: 62px;
     margin: 0 0 25px;
     padding: 0;
@@ -1185,7 +1191,6 @@ xclip
     margin-bottom: 0;
     padding-bottom: 0;
 }
-
 
 .message-box h2 {
     font-family: "Times New Roman", Times, serif;
@@ -2075,6 +2080,7 @@ select.mobile-device {
 
 
 #contact .section-title p{
+    
 	color: #ffffff;
 }
 
@@ -2490,6 +2496,7 @@ select.mobile-device {
 
 
 .stima_container {
+    font-family: "Times New Roman", Times, serif;
     position: relative;
     width: 100%;
     height: 100%;
@@ -2575,4 +2582,40 @@ select.mobile-device {
          url("path/to/TimesNewRoman.woff2") format("woff2");  /* 可以加載更輕量的woff2格式 */
     font-weight: normal;  /* 字型粗細 */
     font-style: normal;   /* 字型樣式 */
+}
+
+.detail-box .heading_container h2{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 28px;
+}
+
+.detail-box .heading_container hr{
+    margin-top: 0px;
+}
+
+.detail-box p{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+}
+
+.detail-box span{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+}
+
+
+.detail-box .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* gap: 1rem; */
+}
+.detail-box .row .col-md-4 {
+    flex: 1 1 33%; 
+}
+
+@media (min-width: 768px) {
+    .col-md-4 {
+        flex: 1 1 calc(33.33%); 
+    }
 }
